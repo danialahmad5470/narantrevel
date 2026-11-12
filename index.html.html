@@ -1,0 +1,2503 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="W1Kp03dvDpaSpAi6GehipbzOsLHxoxsPp_MO47a92h8" />
+    <title id="pageTitle">ناران ٹریول اینڈ ہوٹلز - آپ کا بہترین سفری ہمسفر</title>
+    
+    <!-- Jameel Noori Nastaleeq & Noto Nastaliq Urdu Fonts -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/jameel-noori-nastaleeq">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Embed Jameel Noori Nastaleeq with local and CDN fallback */
+        @font-face {
+            font-family: 'Jameel Noori Nastaleeq';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Jameel Noori Nastaleeq'),
+                 local('Jameel Noori Nastaleeq Regular'),
+                 url('https://fonts.cdnfonts.com/s/149204/JameelNooriNastaleeqRegular.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'Jameel Noori Nastaleeq';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: local('Jameel Noori Nastaleeq Bold'),
+                 local('Jameel Noori Nastaleeq'),
+                 url('https://fonts.cdnfonts.com/s/149204/JameelNooriNastaleeqRegular.woff') format('woff');
+        }
+
+        :root {
+            --primary-font: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', 'Urdu Typesetting', Tahoma, sans-serif;
+            --primary-color: #0f766e;
+            --primary-dark: #0d5e58;
+            --primary-light: #ccfbf1;
+            --secondary-color: #0284c7;
+            --secondary-hover: #0369a1;
+            --dark-color: #0f172a;
+            --card-dark: #1e293b;
+            --light-color: #f8fafc;
+            --white: #ffffff;
+            --accent-color: #f59e0b;
+            --accent-hover: #d97706;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 20px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 30px rgba(0,0,0,0.15);
+            --radius-md: 12px;
+            --radius-lg: 18px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: var(--primary-font);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 2.2;
+            font-size: 1.15rem;
+            overflow-x: hidden;
+            font-family: var(--primary-font);
+        }
+
+        h1, h2, h3, h4, .urdu-nastaliq {
+            font-family: var(--primary-font);
+            font-weight: 700;
+            line-height: 1.85;
+        }
+
+        input, select, textarea, button {
+            font-family: var(--primary-font);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ===== Top Contact Bar ===== */
+        .top-bar {
+            background-color: var(--dark-color);
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            padding: 0.5rem 1.5rem;
+            border-bottom: 1px solid #1e293b;
+            position: relative;
+            z-index: 1001;
+        }
+
+        .top-bar-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .top-bar-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .top-bar-item strong {
+            color: var(--white);
+        }
+
+        .top-bar-item a {
+            color: #38bdf8;
+            font-weight: 600;
+        }
+
+        .top-bar-item i {
+            color: var(--accent-color);
+        }
+
+        .top-editor-btn {
+            background: linear-gradient(135deg, #0284c7, #0369a1);
+            color: var(--white);
+            border: none;
+            padding: 0.25rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: var(--transition);
+            box-shadow: 0 2px 6px rgba(2, 132, 199, 0.4);
+        }
+
+        .top-editor-btn:hover {
+            background: #0284c7;
+            transform: scale(1.05);
+        }
+
+        /* ===== Header Navigation ===== */
+        header {
+            background-color: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.9rem 1.5rem;
+        }
+
+        .logo {
+            font-size: 1.7rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            user-select: none;
+        }
+
+        .logo i {
+            font-size: 1.9rem;
+            color: var(--accent-color);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.8rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--dark-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            position: relative;
+            padding: 0.3rem 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2.5px;
+            bottom: 0;
+            right: 0;
+            background-color: var(--primary-color);
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .btn-book {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white);
+            padding: 0.65rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            box-shadow: 0 4px 12px rgba(15, 118, 110, 0.3);
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-book:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(15, 118, 110, 0.4);
+            color: var(--white);
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.6rem;
+            color: var(--dark-color);
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.3rem;
+        }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.7)),
+                        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed;
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 5rem 1.5rem;
+        }
+
+        .hero-badge {
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: var(--white);
+            padding: 0.4rem 1.2rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            margin-bottom: 1.2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.3rem, 5vw, 3.6rem);
+            line-height: 1.45;
+            margin-bottom: 1.2rem;
+            max-width: 900px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+        }
+
+        .hero p {
+            font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+            margin-bottom: 2.5rem;
+            max-width: 760px;
+            color: #f1f5f9;
+            text-shadow: 0 1px 6px rgba(0,0,0,0.4);
+        }
+
+        /* Booking Search Bar */
+        .search-bar {
+            background: var(--white);
+            padding: 1.6rem;
+            border-radius: var(--radius-lg);
+            display: grid;
+            grid-template-columns: 2fr 1.5fr 1.2fr 1.2fr;
+            gap: 1.2rem;
+            box-shadow: var(--shadow-lg);
+            width: 100%;
+            max-width: 1050px;
+            align-items: flex-end;
+            text-align: right;
+        }
+
+        .search-group {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+
+        .search-group label {
+            color: var(--card-dark);
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .search-group label i {
+            color: var(--primary-color);
+        }
+
+        .search-group input, 
+        .search-group select {
+            padding: 0.75rem 0.9rem;
+            border: 1.5px solid var(--border-color);
+            border-radius: 8px;
+            outline: none;
+            font-size: 1rem;
+            color: var(--dark-color);
+            background-color: #f8fafc;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .search-group input:focus, 
+        .search-group select:focus {
+            border-color: var(--primary-color);
+            background-color: var(--white);
+            box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+        }
+
+        .btn-search {
+            background: linear-gradient(135deg, var(--secondary-color), var(--secondary-hover));
+            color: var(--white);
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-height: 50px;
+            height: auto;
+            box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
+        }
+
+        .btn-search:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(2, 132, 199, 0.4);
+        }
+
+        /* ===== Sections Layout ===== */
+        .container {
+            max-width: 1240px;
+            margin: 5rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .section-tag {
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+            padding: 0.3rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 0.6rem;
+        }
+
+        .section-title {
+            font-size: 2.3rem;
+            color: var(--dark-color);
+            margin-bottom: 0.6rem;
+        }
+
+        .section-subtitle {
+            color: var(--text-muted);
+            font-size: 1.15rem;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        /* ===== Cards Styling ===== */
+        .card {
+            background: var(--white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: var(--shadow-lg);
+            border-color: #cbd5e1;
+        }
+
+        .card-img-wrapper {
+            position: relative;
+            overflow: hidden;
+            height: 220px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.08);
+        }
+
+        .badge-overlay {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(4px);
+            color: var(--white);
+            padding: 0.35rem 0.9rem;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .card-content {
+            padding: 1.6rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            margin-bottom: 0.6rem;
+            color: var(--dark-color);
+        }
+
+        .card-price {
+            color: var(--primary-color);
+            font-weight: 800;
+            font-size: 1.35rem;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+        }
+
+        .card-price span {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .card-features {
+            list-style: none;
+            margin: 0.8rem 0 1.4rem;
+            flex-grow: 1;
+        }
+
+        .card-features li {
+            font-size: 1.05rem;
+            color: #475569;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-features li i {
+            color: #10b981;
+            font-size: 0.95rem;
+            flex-shrink: 0;
+        }
+
+        .card-btn {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+            border: 1.5px solid var(--primary-color);
+            padding: 0.75rem;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: var(--transition);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+        }
+
+        .card-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* ===== Places Section ===== */
+        .place-card {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            height: 320px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .place-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .place-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .place-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .place-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.2) 60%, transparent 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1.5rem;
+            color: var(--white);
+        }
+
+        .place-altitude {
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 0.2rem 0.7rem;
+            border-radius: 4px;
+            align-self: flex-start;
+            margin-bottom: 0.5rem;
+        }
+
+        .place-title {
+            font-size: 1.45rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .place-desc {
+            font-size: 0.98rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        /* ===== Why Choose Us ===== */
+        .features-section {
+            background-color: #f1f5f9;
+            padding: 5rem 1.5rem;
+        }
+
+        .features-grid {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-box {
+            background: var(--white);
+            padding: 2.2rem 1.8rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border-bottom: 4px solid transparent;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-md);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin: 0 auto 1.4rem;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.6rem;
+            color: var(--dark-color);
+        }
+
+        .feature-desc {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        /* ===== Testimonials Section ===== */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .review-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .review-stars {
+            color: #f59e0b;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .review-text {
+            color: #334155;
+            font-size: 1.05rem;
+            line-height: 1.9;
+            margin-bottom: 1.4rem;
+            font-style: italic;
+        }
+
+        .reviewer {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .reviewer-avatar {
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: var(--primary-light);
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .reviewer-info h4 {
+            font-size: 1.1rem;
+            color: var(--dark-color);
+        }
+
+        .reviewer-info p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* ===== CTA Banner ===== */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 3.5rem 2rem;
+            text-align: center;
+            margin: 5rem auto;
+            max-width: 1240px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cta-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-btn {
+            background-color: var(--white);
+            color: var(--primary-color);
+            padding: 0.85rem 2.2rem;
+            border-radius: 30px;
+            font-size: 1.15rem;
+            font-weight: 800;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            cursor: pointer;
+            border: none;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+            background-color: var(--light-color);
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background-color: var(--dark-color);
+            color: var(--white);
+            padding: 4.5rem 1.5rem 1.5rem;
+        }
+
+        .footer-grid {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h3 {
+            margin-bottom: 1.3rem;
+            color: var(--white);
+            font-size: 1.35rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        .footer-col p {
+            color: #94a3b8;
+            font-size: 1rem;
+            line-height: 1.9;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.7rem;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.05rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+            transform: translateX(-5px);
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 0.8rem;
+            color: #cbd5e1;
+            font-size: 1rem;
+        }
+
+        .contact-info i {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            width: 20px;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #1e293b;
+            padding-top: 1.8rem;
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        /* ===== Floating Buttons ===== */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: white;
+            border-radius: 50px;
+            padding: 13px 22px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            z-index: 999;
+            transition: var(--transition);
+            animation: pulse 2.5s infinite;
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+            color: white;
+        }
+
+        /* Floating Editor Button */
+        .editor-float-btn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: linear-gradient(135deg, #0284c7, #0f766e);
+            color: white;
+            border-radius: 50px;
+            padding: 13px 22px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4);
+            font-weight: 700;
+            font-size: 1.05rem;
+            z-index: 999;
+            transition: var(--transition);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+        }
+
+        .editor-float-btn:hover {
+            transform: translateY(-4px) scale(1.04);
+            box-shadow: 0 8px 25px rgba(2, 132, 199, 0.6);
+            background: linear-gradient(135deg, #0369a1, #0d5e58);
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+            70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* ===== Booking Modal ===== */
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(5px);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            width: 100%;
+            max-width: 520px;
+            padding: 2.2rem;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            text-align: right;
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(-20px) scale(0.95); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 18px;
+            left: 20px;
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            background: none;
+            border: none;
+            transition: var(--transition);
+        }
+
+        .modal-close:hover {
+            color: #ef4444;
+            transform: rotate(90deg);
+        }
+
+        .modal-title {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-bottom: 0.4rem;
+        }
+
+        .modal-subtitle {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.1rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 0.4rem;
+            color: var(--dark-color);
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem 0.9rem;
+            border: 1.5px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+            font-family: inherit;
+        }
+
+        .form-group input:focus, 
+        .form-group select:focus, 
+        .form-group textarea:focus {
+            border-color: var(--primary-color);
+        }
+
+        .btn-submit-modal {
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white);
+            padding: 0.85rem;
+            border-radius: 8px;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .btn-submit-modal:hover {
+            background: var(--primary-dark);
+            box-shadow: 0 4px 12px rgba(15, 118, 110, 0.4);
+        }
+
+        /* ===== ADMIN LIVE EDITOR MODAL & STYLES ===== */
+        .editor-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(8px);
+            z-index: 10005;
+            align-items: center;
+            justify-content: center;
+            padding: 1.2rem;
+        }
+
+        .editor-modal.active {
+            display: flex;
+        }
+
+        .editor-dialog {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            width: 100%;
+            max-width: 820px;
+            max-height: 92vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+            position: relative;
+            text-align: right;
+            overflow: hidden;
+            animation: modalFadeIn 0.3s ease-out;
+            border: 1px solid #cbd5e1;
+        }
+
+        .editor-header {
+            background: linear-gradient(135deg, var(--dark-color), #1e293b);
+            color: var(--white);
+            padding: 1.2rem 1.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .editor-header-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.35rem;
+            font-weight: 700;
+        }
+
+        .editor-header-title i {
+            color: var(--accent-color);
+        }
+
+        .editor-close {
+            background: none;
+            border: none;
+            color: #94a3b8;
+            font-size: 1.8rem;
+            cursor: pointer;
+            transition: var(--transition);
+            line-height: 1;
+        }
+
+        .editor-close:hover {
+            color: #f43f5e;
+            transform: scale(1.1);
+        }
+
+        /* Editor Tabs */
+        .editor-tabs {
+            display: flex;
+            background: #f1f5f9;
+            border-bottom: 1.5px solid var(--border-color);
+            overflow-x: auto;
+            scrollbar-width: thin;
+        }
+
+        .editor-tab-btn {
+            background: none;
+            border: none;
+            padding: 0.9rem 1.3rem;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #475569;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+            border-bottom: 3px solid transparent;
+            transition: var(--transition);
+        }
+
+        .editor-tab-btn:hover {
+            color: var(--primary-color);
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        .editor-tab-btn.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+            background: var(--white);
+        }
+
+        /* Editor Body & Scroll */
+        .editor-body {
+            padding: 1.6rem 2rem;
+            overflow-y: auto;
+            flex-grow: 1;
+            scrollbar-width: thin;
+        }
+
+        .editor-tab-panel {
+            display: none;
+        }
+
+        .editor-tab-panel.active {
+            display: block;
+            animation: fadeIn 0.25s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .editor-grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+        }
+
+        .editor-card-box {
+            background: #f8fafc;
+            border: 1.5px solid #e2e8f0;
+            border-radius: var(--radius-md);
+            padding: 1.4rem;
+            margin-bottom: 1.4rem;
+        }
+
+        .editor-card-title {
+            font-size: 1.15rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 1px dashed #cbd5e1;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Editor Footer */
+        .editor-footer {
+            background: #f8fafc;
+            padding: 1rem 1.8rem;
+            border-top: 1.5px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .editor-footer-left {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-save-editor {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white);
+            border: none;
+            padding: 0.65rem 1.6rem;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+            box-shadow: 0 4px 12px rgba(15, 118, 110, 0.3);
+        }
+
+        .btn-save-editor:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-download-html {
+            background: linear-gradient(135deg, var(--secondary-color), var(--secondary-hover));
+            color: var(--white);
+            border: none;
+            padding: 0.65rem 1.3rem;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+        }
+
+        .btn-download-html:hover {
+            background: var(--secondary-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-reset-editor {
+            background: #f1f5f9;
+            color: #dc2626;
+            border: 1px solid #fecaca;
+            padding: 0.65rem 1.1rem;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: var(--transition);
+        }
+
+        .btn-reset-editor:hover {
+            background: #fee2e2;
+        }
+
+        /* Direct Live Inline Edit Highlight */
+        .live-edit-active [data-editable] {
+            outline: 2px dashed #0284c7 !important;
+            outline-offset: 3px;
+            background-color: rgba(2, 132, 199, 0.05);
+            cursor: text;
+            transition: background-color 0.2s;
+        }
+
+        .live-edit-active [data-editable]:hover {
+            background-color: rgba(2, 132, 199, 0.15);
+        }
+
+        .live-edit-banner {
+            display: none;
+            position: fixed;
+            top: 75px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #0284c7;
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            box-shadow: var(--shadow-lg);
+            z-index: 10001;
+            font-weight: 700;
+            font-size: 1.05rem;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .live-edit-banner.active {
+            display: flex;
+        }
+
+        .live-edit-banner button {
+            background: white;
+            color: #0284c7;
+            border: none;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 800;
+            font-size: 0.95rem;
+        }
+
+        /* Toast Notification */
+        .toast-msg {
+            position: fixed;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-100px);
+            background: #10b981;
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            box-shadow: var(--shadow-lg);
+            z-index: 100000;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            pointer-events: none;
+        }
+
+        .toast-msg.show {
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* ===== Responsive Media Queries ===== */
+        @media (max-width: 992px) {
+            .search-bar {
+                grid-template-columns: 1fr 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .editor-grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 1.5rem;
+                gap: 1.2rem;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                display: none;
+                border-top: 1px solid var(--border-color);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .btn-book.desktop-only {
+                display: none;
+            }
+
+            .search-bar {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2.1rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .whatsapp-btn span,
+            .editor-float-btn span {
+                display: none;
+            }
+
+            .whatsapp-btn {
+                padding: 14px 16px;
+                border-radius: 50%;
+                left: 15px;
+                bottom: 15px;
+            }
+
+            .editor-float-btn {
+                padding: 14px 16px;
+                border-radius: 50%;
+                right: 15px;
+                bottom: 15px;
+            }
+
+            .editor-dialog {
+                max-height: 96vh;
+            }
+
+            .editor-body {
+                padding: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast-msg">
+        <i class="fa-solid fa-circle-check fa-lg"></i>
+        <span id="toastText">تمام تبدیلیاں کامیابی سے محفوظ ہو گئیں!</span>
+    </div>
+
+    <!-- Live Edit Bar (When Inline Edit Mode is Active) -->
+    <div id="liveEditBanner" class="live-edit-banner">
+        <i class="fa-solid fa-pen-nib"></i>
+        <span>براہ راست ایڈیٹنگ موڈ آن ہے (کسی بھی متن پر کلک کر کے تبدیل کریں)</span>
+        <button onclick="saveLiveEdits()"><i class="fa-solid fa-floppy-disk"></i> محفوظ کریں</button>
+        <button onclick="toggleLiveEditMode(false)"><i class="fa-solid fa-xmark"></i> بند کریں</button>
+    </div>
+
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-item">
+                <i class="fa-solid fa-user-tie"></i> 
+                <span>رابطہ کار: <strong data-bind="contactPerson">دانیال احمد</strong></span>
+            </div>
+            <div class="top-bar-item">
+                <i class="fa-brands fa-whatsapp"></i> 
+                <span>واٹس ایپ / فون: <a href="https://wa.me/923014210508" id="topbarPhoneLink" dir="ltr" data-bind="phoneFormatted">+92 301 4210508</a></span>
+            </div>
+            <div class="top-bar-item">
+                <button class="top-editor-btn" onclick="openEditorDrawer()">
+                    <i class="fa-solid fa-pen-to-square"></i> ایڈیٹر پینل
+                </button>
+            </div>
+            <div class="top-bar-item desktop-only">
+                <i class="fa-solid fa-clock"></i> <span>24/7 بکنگ و کسٹمر سپورٹ دستیاب ہے</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-mountain-sun"></i> 
+                <span data-bind="travelName" data-editable="travelName">ناران ٹریولز</span>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">ہوم</a></li>
+                <li><a href="#tours">ٹور پیکجز</a></li>
+                <li><a href="#places">مشہور مقامات</a></li>
+                <li><a href="#hotels">ہوٹلز</a></li>
+                <li><a href="#features">ہماری خصوصیات</a></li>
+                <li><a href="#contact">رابطہ</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="btn-book desktop-only" onclick="openBookingModal('جنرل بکنگ')">
+                    <i class="fa-solid fa-calendar-check"></i> ابھی بک کریں
+                </button>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <span class="hero-badge">
+            <i class="fa-solid fa-award"></i> پاکستان کا سب سے قابل اعتماد ٹریول نیٹ ورک
+        </span>
+        <h1 data-bind="heroTitle" data-editable="heroTitle">ناران وادی کی مسحور کن فضاؤں میں آپ کا خوش آمدید</h1>
+        <p data-bind="heroSubtitle" data-editable="heroSubtitle">جھیل سیف الملوک، بابوسر ٹاپ، شوگران اور لولوسر کے لیے فیملی، گروپ اور ہنی مون ٹورز کی بہترین خدمات</p>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <div class="search-group">
+                <label><i class="fa-solid fa-compass"></i> سروس کا انتخاب کریں</label>
+                <select id="searchService">
+                    <option value="مکمل ٹور پیکیج + ہوٹل">مکمل ٹور پیکیج + ہوٹل</option>
+                    <option value="صرف لگژری ہوٹل بکنگ">صرف لگژری ہوٹل بکنگ</option>
+                    <option value="4x4 جیپ اور ٹرانسپورٹ">4x4 جیپ اور ٹرانسپورٹ</option>
+                    <option value="ہنی مون سپیشل ٹور">ہنی مون سپیشل ٹور</option>
+                    <option value="فرینڈز کیمپنگ اور ایڈونچر">فرینڈز کیمپنگ اور ایڈونچر</option>
+                </select>
+            </div>
+            <div class="search-group">
+                <label><i class="fa-solid fa-calendar-days"></i> تاریخِ آمد</label>
+                <input type="date" id="searchDate">
+            </div>
+            <div class="search-group">
+                <label><i class="fa-solid fa-users"></i> مسافروں کی تعداد</label>
+                <input type="number" id="searchGuests" placeholder="2 افراد" min="1" value="2">
+            </div>
+            <div class="search-group">
+                <button class="btn-search" onclick="handleSearchBooking()">
+                    <i class="fa-solid fa-magnifying-glass"></i> تلاش کریں
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Packages Section -->
+    <section class="container" id="tours">
+        <div class="section-header">
+            <span class="section-tag">پیکجز اور آفرز</span>
+            <h2 class="section-title">مقبول ٹور پیکجز</h2>
+            <p class="section-subtitle">آپ کے خاندان، دوستوں اور خاص لمحات کے لیے پرکشش رعایت یافتہ پیکیجز</p>
+        </div>
+
+        <div class="grid" id="toursGrid">
+            <!-- Dynamic Tour Cards are Rendered Here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Famous Places Section -->
+    <section class="container" id="places">
+        <div class="section-header">
+            <span class="section-tag">سیاحتی مقامات</span>
+            <h2 class="section-title">ناران ویلی کے دلکش نظارے</h2>
+            <p class="section-subtitle">قدرت کا وہ انمول شاہکار جو آپ کے سفر کو زندگی بھر کے لیے یادگار بنا دے گا</p>
+        </div>
+
+        <div class="grid" id="placesGrid">
+            <!-- Place 1 -->
+            <div class="place-card" onclick="openBookingModal('جھیل سیف الملوک ٹور')">
+                <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=700&q=80" alt="جھیل سیف الملوک">
+                <div class="place-overlay">
+                    <span class="place-altitude"><i class="fa-solid fa-mountain"></i> بلندی: 10,578 فٹ</span>
+                    <h3 class="place-title">جھیل سیف الملوک</h3>
+                    <p class="place-desc">پریوں کی سرزمین اور ناران کا سب سے پرکشش مقام، جہاں ملکہ پربت کا عکس جھلکتا ہے۔</p>
+                </div>
+            </div>
+
+            <!-- Place 2 -->
+            <div class="place-card" onclick="openBookingModal('بابوسر ٹاپ ٹور')">
+                <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=700&q=80" alt="بابوسر ٹاپ">
+                <div class="place-overlay">
+                    <span class="place-altitude"><i class="fa-solid fa-mountain"></i> بلندی: 13,691 فٹ</span>
+                    <h3 class="place-title">بابوسر ٹاپ</h3>
+                    <p class="place-desc">خیبر پختونخوا اور گلگت بلتستان کا بلند ترین سنگم، بادلوں کے اوپر سحر انگیز مناظر۔</p>
+                </div>
+            </div>
+
+            <!-- Place 3 -->
+            <div class="place-card" onclick="openBookingModal('سری پائے و شوگران ٹور')">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=700&q=80" alt="شوگران اور سری پائے">
+                <div class="place-overlay">
+                    <span class="place-altitude"><i class="fa-solid fa-mountain"></i> بلندی: 9,500 فٹ</span>
+                    <h3 class="place-title">شوگران و سری پائے</h3>
+                    <p class="place-desc">سرسبز مرغزار، دیودار کے گھنے جنگلات اور مکڑا پیک کی چوٹی کے دلفریب نظارے۔</p>
+                </div>
+            </div>
+
+            <!-- Place 4 -->
+            <div class="place-card" onclick="openBookingModal('لولوسر جھیل ٹور')">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80" alt="لولوسر جھیل">
+                <div class="place-overlay">
+                    <span class="place-altitude"><i class="fa-solid fa-mountain"></i> بلندی: 11,190 فٹ</span>
+                    <h3 class="place-title">لولوسر جھیل</h3>
+                    <p class="place-desc">دریاۓ کنہار کا اصل منبع، شیشے جیسا نیلا پانی اور برف سے ڈھکی ہوئی چوٹیاں۔</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Booking Section -->
+    <section class="container" id="hotels">
+        <div class="section-header">
+            <span class="section-tag">پرتعیش رہائش</span>
+            <h2 class="section-title">بہترین ہوٹلز اور لگژری ریسارٹس</h2>
+            <p class="section-subtitle">خوبصورت نظاروں اور جدید سہولیات سے آراستہ معیاری اور آرام دہ کمرے</p>
+        </div>
+
+        <div class="grid" id="hotelsGrid">
+            <!-- Dynamic Hotel Cards are Rendered Here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="features-section" id="features">
+        <div class="section-header">
+            <span class="section-tag">ہمارا امتیاز</span>
+            <h2 class="section-title">ہمارا انتخاب کیوں کریں؟</h2>
+            <p class="section-subtitle">ہم سیاحوں کے اطمینان اور آرام دہ سفر کو پہلی ترجیح دیتے ہیں</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3 class="feature-title">100% محفوظ اور بااعتماد</h3>
+                <p class="feature-desc">فیملیز کے لیے مکمل محفوظ ماحول، تصدیق شدہ ہوٹلز اور تجربہ کار ڈرائیورز۔</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-car"></i></div>
+                <h3 class="feature-title">جدید 4x4 جیپس و گاڑیاں</h3>
+                <p class="feature-desc">سیف الملوک اور بابوسر کے کٹھن راستوں کے لیے طاقتور اور آرام دہ جیپ سروس۔</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-tags"></i></div>
+                <h3 class="feature-title">مناسب اور فکسڈ چارجز</h3>
+                <p class="feature-desc">بغیر کسی پوشیدہ چارجز کے مارکیٹ سے بہترین رعایت اور کوالٹی کی ضمانت۔</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                <h3 class="feature-title">24/7 رہنمائی و سپورٹ</h3>
+                <p class="feature-desc">سفر کے آغاز سے واپسی تک ہماری ٹیم چوبیس گھنٹے آپ کی خدمت میں حاضر رہتی ہے۔</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="container" id="reviews">
+        <div class="section-header">
+            <span class="section-tag">سیاحوں کے تاثرات</span>
+            <h2 class="section-title">ہمارے مطمئن کسٹمرز کیا کہتے ہیں</h2>
+            <p class="section-subtitle">ہزاروں خاندان اور سیاح ہمارے سفری انتظام پر اعتماد کرتے ہیں</p>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"ہماری فیملی کا ناران ٹور انتہائی شاندار رہا۔ ہوٹل بالکل دریا کے کنارے تھا، کھانا لذیذ تھا اور جیپ والے بھائی بہت بااخلاق تھے۔ بہت شکریہ!"</p>
+                <div class="reviewer">
+                    <div class="reviewer-avatar">ع ر</div>
+                    <div class="reviewer-info">
+                        <h4>علی رضا خان</h4>
+                        <p>لاہور، پنجاب</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"ہم نے ہنی مون پیکیج لیا تھا، شوگران اور ناران میں ہر چیز توقعات سے بڑھ کر معیاری ملی۔ خاص طور پر کینڈل لائٹ ڈنر کا انتظام لاجواب تھا۔ 10/10 سروس!"</p>
+                <div class="reviewer">
+                    <div class="reviewer-avatar">ع ش</div>
+                    <div class="reviewer-info">
+                        <h4>عائشہ و شعیب</h4>
+                        <p>اسلام آباد</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"دوستوں کے گروپ کے ساتھ رافٹنگ، کیمپنگ اور بون فائر کا ایسا ایڈونچر پہلے کبھی نہیں دیکھا۔ پرائیویٹ گاڑی بالکل وقت پر اسلام آباد پہنچی۔ ویل ڈن!"</p>
+                <div class="reviewer">
+                    <div class="reviewer-avatar">ف ا</div>
+                    <div class="reviewer-info">
+                        <h4>فیصل انور</h4>
+                        <p>کراچی، سندھ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <div class="container">
+        <div class="cta-section">
+            <h2>کیا آپ وادی ناران کا یادگار سفر شروع کرنے کے لیے تیار ہیں؟</h2>
+            <p>اپنی پسندیدہ تاریخوں پر بہترین رعایت اور خصوصی سہولیات کے ساتھ سیٹ بک کروائیں</p>
+            <button class="cta-btn" onclick="openBookingModal('خصوصی رعایت بکنگ')">
+                <i class="fa-brands fa-whatsapp fa-lg"></i> واٹس ایپ پر فوری معلومات حاصل کریں
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="color: var(--white); margin-bottom: 1.2rem;">
+                    <i class="fa-solid fa-mountain-sun"></i> 
+                    <span data-bind="travelName">ناران ٹریولز</span>
+                </div>
+                <p>ہم ناران، کاغان، شوگران اور بابوسر ٹاپ کے لیے پاکستان کا سب سے معیاری اور بااعتماد ٹور آپریٹر ہیں۔ ہمارا مشن آپ کے ہر سفر کو آرام دہ اور یادگار بنانا ہے۔</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>اہم لنکس</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fa-solid fa-chevron-left"></i> صفحۂ اول (ہوم)</a></li>
+                    <li><a href="#tours"><i class="fa-solid fa-chevron-left"></i> ٹور پیکجز</a></li>
+                    <li><a href="#places"><i class="fa-solid fa-chevron-left"></i> دیدہ زیب مقامات</a></li>
+                    <li><a href="#hotels"><i class="fa-solid fa-chevron-left"></i> ہوٹلز اور ریسارٹس</a></li>
+                    <li><a href="#features"><i class="fa-solid fa-chevron-left"></i> ہماری خصوصیات</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>سیاحتی مقامات</h3>
+                <ul class="footer-links">
+                    <li><a href="#places"><i class="fa-solid fa-location-dot"></i> جھیل سیف الملوک</a></li>
+                    <li><a href="#places"><i class="fa-solid fa-location-dot"></i> بابوسر ٹاپ</a></li>
+                    <li><a href="#places"><i class="fa-solid fa-location-dot"></i> لولوسر جھیل</a></li>
+                    <li><a href="#places"><i class="fa-solid fa-location-dot"></i> سری پائے اور شوگران</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-info">
+                <h3>ہم سے رابطہ کریں</h3>
+                <p><i class="fa-solid fa-user-tie"></i> <strong>رابطہ کار:</strong> <span data-bind="contactPerson">دانیال احمد</span></p>
+                <p><i class="fa-solid fa-phone"></i> <span data-bind="phoneFormatted">+92 301 4210508</span> (<span data-bind="contactPerson">دانیال احمد</span>)</p>
+                <p><i class="fa-brands fa-whatsapp"></i> <span data-bind="phoneFormatted">+92 301 4210508</span></p>
+                <p><i class="fa-solid fa-envelope"></i> <span data-bind="email">info@narantravels.com</span></p>
+                <p><i class="fa-solid fa-location-dot"></i> <span data-bind="address">مین بازار، بالمقابل پائن پارک، ناران ویلی</span></p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            جملہ حقوق محفوظ ہیں۔ © 2026 <span data-bind="travelName">ناران ٹریول اینڈ ہوٹلز</span> | زیرِ اہتمام: <span data-bind="contactPerson">دانیال احمد</span>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/923014210508?text=اسلام%20علیکم%20دانیال%20احمد%20بھائی!%20مجھے%20ناران%20ٹور%20اور%20ہوٹل%20بکنگ%20کی%20معلومات%20چاہییں۔" 
+       class="whatsapp-btn" 
+       id="floatingWhatsappBtn"
+       target="_blank" 
+       title="دانیال احمد سے واٹس ایپ پر رابطہ کریں">
+        <i class="fa-brands fa-whatsapp fa-2xl"></i>
+        <span>واٹس ایپ رابطہ</span>
+    </a>
+
+    <!-- Floating Editor Button -->
+    <button class="editor-float-btn" onclick="openEditorDrawer()" title="ویب سائٹ میں نام، قیمتیں اور ہوٹل وغیرہ تبدیل کریں">
+        <i class="fa-solid fa-pen-to-square fa-lg"></i>
+        <span>ایڈیٹر پینل</span>
+    </button>
+
+    <!-- Booking Modal Form -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+            <h3 class="modal-title" id="modalTitle">بکنگ فارم</h3>
+            <p class="modal-subtitle">براہ کرم تفصیلات درج کریں، <span data-bind="contactPerson">دانیال احمد</span> آپ سے واٹس ایپ پر فوری رابطہ کریں گے</p>
+            
+            <form id="bookingForm" onsubmit="submitBookingForm(event)">
+                <div class="form-group">
+                    <label>آپ کا نام</label>
+                    <input type="text" id="custName" placeholder="مثال: محمد احمد" required>
+                </div>
+                <div class="form-group">
+                    <label>فون / واٹس ایپ نمبر</label>
+                    <input type="tel" id="custPhone" placeholder="0301 4210508" required>
+                </div>
+                <div class="form-group">
+                    <label>منتخب کردہ پیکیج یا سروس</label>
+                    <input type="text" id="custPackage" readonly>
+                </div>
+                <div class="form-group">
+                    <label>آمد کی متوقع تاریخ</label>
+                    <input type="date" id="custDate" required>
+                </div>
+                <div class="form-group">
+                    <label>افراد کی تعداد</label>
+                    <input type="number" id="custPersons" min="1" value="2" required>
+                </div>
+                <button type="submit" class="btn-submit-modal">
+                    <i class="fa-brands fa-whatsapp"></i> واٹس ایپ پر بکنگ بھیجیں
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- LIVE WEBSITE ADMIN / CMS EDITOR MODAL PANEL -->
+    <!-- ========================================== -->
+    <div class="editor-modal" id="editorModal">
+        <div class="editor-dialog">
+            <!-- Header -->
+            <div class="editor-header">
+                <div class="editor-header-title">
+                    <i class="fa-solid fa-sliders"></i>
+                    <span>ویب سائٹ کنٹرول پینل و ایڈیٹر</span>
+                </div>
+                <button class="editor-close" onclick="closeEditorDrawer()">&times;</button>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <div class="editor-tabs">
+                <button class="editor-tab-btn active" onclick="switchEditorTab('tabGeneral', this)">
+                    <i class="fa-solid fa-id-card"></i> برانڈ و رابطہ
+                </button>
+                <button class="editor-tab-btn" onclick="switchEditorTab('tabTours', this)">
+                    <i class="fa-solid fa-map-location-dot"></i> ٹور پیکجز و قیمتیں
+                </button>
+                <button class="editor-tab-btn" onclick="switchEditorTab('tabHotels', this)">
+                    <i class="fa-solid fa-hotel"></i> ہوٹلز و کرائے
+                </button>
+                <button class="editor-tab-btn" onclick="switchEditorTab('tabAdvanced', this)">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> لائیو موڈ و بیک اپ
+                </button>
+            </div>
+
+            <!-- Tab Panels Content -->
+            <div class="editor-body">
+                <!-- Tab 1: General & Contact -->
+                <div id="tabGeneral" class="editor-tab-panel active">
+                    <div class="editor-card-box">
+                        <h4 class="editor-card-title"><i class="fa-solid fa-building"></i> ٹریول کمپنی و رابطہ کار</h4>
+                        <div class="editor-grid-2">
+                            <div class="form-group">
+                                <label>ٹریول کمپنی کا نام</label>
+                                <input type="text" id="edTravelName" placeholder="مثال: ناران ٹریولز">
+                            </div>
+                            <div class="form-group">
+                                <label>رابطہ کار / اونر کا نام</label>
+                                <input type="text" id="edContactPerson" placeholder="مثال: دانیال احمد">
+                            </div>
+                        </div>
+                        <div class="editor-grid-2">
+                            <div class="form-group">
+                                <label>واٹس ایپ / فون نمبر (بغیر زیرو یا ساتھ)</label>
+                                <input type="text" id="edPhone" placeholder="03014210508">
+                            </div>
+                            <div class="form-group">
+                                <label>ای میل ایڈریس</label>
+                                <input type="email" id="edEmail" placeholder="info@narantravels.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>آفس / ہوٹل کا پتہ</label>
+                            <input type="text" id="edAddress" placeholder="مین بازار، بالمقابل پائن پارک، ناران ویلی">
+                        </div>
+                    </div>
+
+                    <div class="editor-card-box">
+                        <h4 class="editor-card-title"><i class="fa-solid fa-image"></i> ہیرو سیکشن کا عنوان و تفصیل</h4>
+                        <div class="form-group">
+                            <label>مرکزی بڑا عنوان (Hero Main Heading)</label>
+                            <input type="text" id="edHeroTitle" placeholder="ناران وادی کی مسحور کن فضاؤں میں آپ کا خوش آمدید">
+                        </div>
+                        <div class="form-group">
+                            <label>ذیلی تفصیل (Hero Subtitle)</label>
+                            <textarea id="edHeroSubtitle" rows="2" placeholder="جھیل سیف الملوک، بابوسر ٹاپ، شوگران اور لولوسر کے لیے فیملی..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Tour Packages -->
+                <div id="tabTours" class="editor-tab-panel">
+                    <div id="editorToursContainer">
+                        <!-- Dynamic Tour Inputs generated by JS -->
+                    </div>
+                </div>
+
+                <!-- Tab 3: Hotels & Rates -->
+                <div id="tabHotels" class="editor-tab-panel">
+                    <div id="editorHotelsContainer">
+                        <!-- Dynamic Hotel Inputs generated by JS -->
+                    </div>
+                </div>
+
+                <!-- Tab 4: Advanced Live Mode & Export -->
+                <div id="tabAdvanced" class="editor-tab-panel">
+                    <div class="editor-card-box">
+                        <h4 class="editor-card-title"><i class="fa-solid fa-pen-nib"></i> براہِ راست صفحے پر کلک کر کے لکھیں</h4>
+                        <p style="color: #475569; margin-bottom: 1rem; font-size: 1.05rem;">
+                            اس موڈ کو آن کر کے آپ ویب سائٹ پر موجود کسی بھی متن پر ڈائریکٹ کلک کر کے اپنے کی بورڈ سے ٹائپ کر سکتے ہیں!
+                        </p>
+                        <button type="button" class="btn-save-editor" onclick="toggleLiveEditMode(true); closeEditorDrawer();">
+                            <i class="fa-solid fa-pen"></i> ڈائریکٹ لائیو ایڈیٹ آن کریں
+                        </button>
+                    </div>
+
+                    <div class="editor-card-box">
+                        <h4 class="editor-card-title"><i class="fa-solid fa-download"></i> اپڈیٹ شدہ مکمل کوڈ فائل ڈاؤن لوڈ کریں</h4>
+                        <p style="color: #475569; margin-bottom: 1rem; font-size: 1.05rem;">
+                            آپ نے جو بھی نام، قیمتیں یا ہوٹل تبدیل کیے ہیں، ان کے ساتھ ایک بالکل نیا اور تیار <code>index.html</code> فائل ڈاؤن لوڈ کریں جسے آپ کسی کو بھی بھیج سکتے ہیں یا براہ راست ویب ہوسٹنگ پر چلا سکتے ہیں۔
+                        </p>
+                        <button type="button" class="btn-download-html" onclick="downloadUpdatedHtml()">
+                            <i class="fa-solid fa-file-arrow-down"></i> نیا index.html ڈاؤن لوڈ کریں
+                        </button>
+                    </div>
+
+                    <div class="editor-card-box" style="border-color: #fecaca; background: #fff5f5;">
+                        <h4 class="editor-card-title" style="color: #dc2626;"><i class="fa-solid fa-triangle-exclamation"></i> ری سیٹ (اصل ڈیٹا بحال کریں)</h4>
+                        <p style="color: #7f1d1d; margin-bottom: 1rem; font-size: 1rem;">
+                            اگر آپ تمام تبدیلیاں ختم کر کے اصل ڈیفالٹ ڈیٹا (دانیال احمد، 03014210508، اصل پیکیجز) واپس لانا چاہتے ہیں تو یہاں کلک کریں۔
+                        </p>
+                        <button type="button" class="btn-reset-editor" onclick="resetToDefaults()">
+                            <i class="fa-solid fa-rotate-left"></i> تمام ترامیم ری سیٹ کریں
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Action Buttons -->
+            <div class="editor-footer">
+                <div class="editor-footer-left">
+                    <button type="button" class="btn-save-editor" onclick="saveEditorData()">
+                        <i class="fa-solid fa-floppy-disk"></i> تبدیلیاں محفوظ کریں
+                    </button>
+                    <button type="button" class="btn-download-html" onclick="downloadUpdatedHtml()">
+                        <i class="fa-solid fa-download"></i> کوڈ ڈاؤن لوڈ کریں
+                    </button>
+                </div>
+                <button type="button" class="btn-reset-editor" style="color: #475569; border-color: #cbd5e1; background: #f8fafc;" onclick="closeEditorDrawer()">
+                    بند کریں
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- MASTER DATA & APPLICATION JAVASCRIPT CODE  -->
+    <!-- ========================================== -->
+    <script id="siteDataScript">
+        // Default Site Master Data
+        const defaultSiteData = {
+            travelName: "ناران ٹریولز",
+            contactPerson: "دانیال احمد",
+            phone: "03014210508",
+            email: "info@narantravels.com",
+            address: "مین بازار، بالمقابل پائن پارک، ناران ویلی",
+            heroTitle: "ناران وادی کی مسحور کن فضاؤں میں آپ کا خوش آمدید",
+            heroSubtitle: "جھیل سیف الملوک، بابوسر ٹاپ، شوگران اور لولوسر کے لیے فیملی، گروپ اور ہنی مون ٹورز کی بہترین خدمات",
+            tours: [
+                {
+                    title: "ناران فیملی سپیشل ٹور",
+                    duration: "3 دن / 2 راتیں",
+                    durationIcon: "fa-clock",
+                    price: "PKR 45,000",
+                    priceUnit: "/ فی فیملی",
+                    image: "https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=700&q=80",
+                    features: [
+                        "لگژری ہوٹل روم مع ناشتہ و ڈنر",
+                        "جھیل سیف الملوک کے لیے 4x4 پرائیویٹ جیپ",
+                        "مقامی تجربہ کار گائیڈ اور ڈرائیور",
+                        "دریائے کنہار ریور رافٹنگ اور باربی کیو"
+                    ]
+                },
+                {
+                    title: "ہنی مون رومانٹک پیکج",
+                    duration: "5 دن / 4 راتیں",
+                    durationIcon: "fa-heart",
+                    price: "PKR 75,000",
+                    priceUnit: "/ کپلو",
+                    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=700&q=80",
+                    features: [
+                        "شوگران، سری پائے اور بابوسر ٹاپ وزٹ",
+                        "ڈیکوریٹڈ وی آئی پی سوئیٹ مع دریا کنارے ویو",
+                        "پرائیویٹ اے سی کار (اسلام آباد سے روانگی)",
+                        "کینڈل لائٹ ڈنر اور کیک سرپرائز"
+                    ]
+                },
+                {
+                    title: "فرینڈز اینڈ ایڈونچر گروپ ٹور",
+                    duration: "4 دن / 3 راتیں",
+                    durationIcon: "fa-fire",
+                    price: "PKR 18,500",
+                    priceUnit: "/ فی کس",
+                    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=80",
+                    features: [
+                        "واٹر رافٹنگ اور لولوسر جھیل پر کیمپنگ",
+                        "رات کا بون فائر اور میوزیکل باربی کیو نائٹ",
+                        "ہائیکنگ ٹو آنسو جھیل بیس کیمپ",
+                        "تمام ٹول ٹیکس اور ٹرانسپورٹ شامل"
+                    ]
+                }
+            ],
+            hotels: [
+                {
+                    title: "ناران پائن ریسارٹ",
+                    rating: "4.8 ریٹنگ",
+                    price: "PKR 12,000",
+                    priceUnit: "/ فی رات",
+                    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80",
+                    features: [
+                        "تیز رفتار مفت وائی فائی انٹرنیٹ",
+                        "24 گھنٹے روم ہیٹر اور گرم پانی",
+                        "مین بازار کے قریب وادی کا کھلا منظر"
+                    ]
+                },
+                {
+                    title: "ریور ویو ہوٹل اینڈ سوئیٹس",
+                    rating: "4.9 ریٹنگ",
+                    price: "PKR 15,000",
+                    priceUnit: "/ فی رات",
+                    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=700&q=80",
+                    features: [
+                        "بالکونی سے دریائے کنہار کا مسحور کن نظارہ",
+                        "پاکستانی و کانٹی نینٹل ریستوران",
+                        "وسیع و محفوظ کار پارکنگ اور سکیورٹی"
+                    ]
+                },
+                {
+                    title: "شوگران پائن ووڈ ولاز",
+                    rating: "5.0 ریٹنگ",
+                    price: "PKR 18,000",
+                    priceUnit: "/ فی رات",
+                    image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=700&q=80",
+                    features: [
+                        "چیڑ کے گھنے جنگلات میں پرائیویٹ ولاز",
+                        "انڈور فائر پلیس اور بون فائر ایریا",
+                        "24 گھنٹے لگژری بٹلر اور شیف سروس"
+                    ]
+                }
+            ]
+        };
+
+        // Load saved data from localStorage or fallback to defaults
+        let siteData = loadSavedSiteData();
+
+        function loadSavedSiteData() {
+            try {
+                const stored = localStorage.getItem('naran_site_data');
+                if (stored) {
+                    return JSON.parse(stored);
+                }
+            } catch (e) {
+                console.error("Could not load stored data:", e);
+            }
+            return JSON.parse(JSON.stringify(defaultSiteData));
+        }
+
+        // Format raw phone number into clean WhatsApp link & display
+        function formatPhone(phone) {
+            let clean = phone.replace(/[^0-9]/g, '');
+            if (clean.startsWith('0')) {
+                clean = '92' + clean.substring(1);
+            } else if (!clean.startsWith('92')) {
+                clean = '92' + clean;
+            }
+            // Display: +92 301 4210508
+            let display = '+92 ' + clean.substring(2, 5) + ' ' + clean.substring(5);
+            return { raw: clean, display: display };
+        }
+
+        // Render siteData dynamically into the webpage
+        function renderSite() {
+            const pInfo = formatPhone(siteData.phone || '03014210508');
+
+            // Page Title
+            document.title = (siteData.travelName || 'ناران ٹریول اینڈ ہوٹلز') + ' - آپ کا بہترین سفری ہمسفر';
+
+            // General text elements bound via data-bind
+            document.querySelectorAll('[data-bind="travelName"]').forEach(el => el.innerText = siteData.travelName);
+            document.querySelectorAll('[data-bind="contactPerson"]').forEach(el => el.innerText = siteData.contactPerson);
+            document.querySelectorAll('[data-bind="phoneFormatted"]').forEach(el => el.innerText = pInfo.display);
+            document.querySelectorAll('[data-bind="email"]').forEach(el => el.innerText = siteData.email);
+            document.querySelectorAll('[data-bind="address"]').forEach(el => el.innerText = siteData.address);
+            document.querySelectorAll('[data-bind="heroTitle"]').forEach(el => el.innerText = siteData.heroTitle);
+            document.querySelectorAll('[data-bind="heroSubtitle"]').forEach(el => el.innerText = siteData.heroSubtitle);
+
+            // Update top bar phone link
+            const topbarPhoneLink = document.getElementById('topbarPhoneLink');
+            if (topbarPhoneLink) {
+                topbarPhoneLink.href = `https://wa.me/${pInfo.raw}`;
+            }
+
+            // Update floating WhatsApp button
+            const floatingBtn = document.getElementById('floatingWhatsappBtn');
+            if (floatingBtn) {
+                floatingBtn.href = `https://wa.me/${pInfo.raw}?text=${encodeURIComponent('سلام علیکم ' + siteData.contactPerson + ' بھائی! مجھے ناران ٹور اور ہوٹل بکنگ کی معلومات چاہییں۔')}`;
+                floatingBtn.title = `${siteData.contactPerson} سے واٹس ایپ پر رابطہ کریں`;
+            }
+
+            // Render Tour Cards
+            const toursGrid = document.getElementById('toursGrid');
+            if (toursGrid && siteData.tours) {
+                toursGrid.innerHTML = siteData.tours.map((tour, idx) => {
+                    const featuresHtml = tour.features.map(f => `<li><i class="fa-solid fa-circle-check"></i> ${f}</li>`).join('');
+                    return `
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="${tour.image}" alt="${tour.title}">
+                            <span class="badge-overlay"><i class="fa-solid ${tour.durationIcon || 'fa-clock'}"></i> ${tour.duration}</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">${tour.title}</h3>
+                            <div class="card-price">${tour.price} <span>${tour.priceUnit || '/ فی فیملی'}</span></div>
+                            <ul class="card-features">
+                                ${featuresHtml}
+                            </ul>
+                            <button class="card-btn" onclick="openBookingModal('${tour.title} (${tour.price})')">
+                                <i class="fa-solid fa-paper-plane"></i> ابھی بک کریں
+                            </button>
+                        </div>
+                    </div>
+                    `;
+                }).join('');
+            }
+
+            // Render Hotel Cards
+            const hotelsGrid = document.getElementById('hotelsGrid');
+            if (hotelsGrid && siteData.hotels) {
+                hotelsGrid.innerHTML = siteData.hotels.map((hotel, idx) => {
+                    const featuresHtml = hotel.features.map(f => `<li><i class="fa-solid fa-check"></i> ${f}</li>`).join('');
+                    return `
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="${hotel.image}" alt="${hotel.title}">
+                            <span class="badge-overlay"><i class="fa-solid fa-star" style="color: #f59e0b;"></i> ${hotel.rating}</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">${hotel.title}</h3>
+                            <div class="card-price">${hotel.price} <span>${hotel.priceUnit || '/ فی رات'}</span></div>
+                            <ul class="card-features">
+                                ${featuresHtml}
+                            </ul>
+                            <button class="card-btn" onclick="openBookingModal('${hotel.title} (${hotel.price})')">
+                                <i class="fa-solid fa-bed"></i> کمرہ بک کریں
+                            </button>
+                        </div>
+                    </div>
+                    `;
+                }).join('');
+            }
+        }
+
+        // ==========================================
+        // EDITOR MODAL CONTROLS & FORM POPULATION
+        // ==========================================
+        const editorModal = document.getElementById('editorModal');
+
+        function openEditorDrawer() {
+            populateEditorFields();
+            editorModal.classList.add('active');
+        }
+
+        function closeEditorDrawer() {
+            editorModal.classList.remove('active');
+        }
+
+        // Close on clicking outside editor dialog
+        editorModal.addEventListener('click', (e) => {
+            if (e.target === editorModal) closeEditorDrawer();
+        });
+
+        // Switch Tabs in Editor
+        function switchEditorTab(tabId, btn) {
+            document.querySelectorAll('.editor-tab-panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.editor-tab-btn').forEach(b => b.classList.remove('active'));
+            const targetPanel = document.getElementById(tabId);
+            if (targetPanel) targetPanel.classList.add('active');
+            if (btn) btn.classList.add('active');
+        }
+
+        // Populate Editor Inputs with current siteData
+        function populateEditorFields() {
+            document.getElementById('edTravelName').value = siteData.travelName || '';
+            document.getElementById('edContactPerson').value = siteData.contactPerson || '';
+            document.getElementById('edPhone').value = siteData.phone || '';
+            document.getElementById('edEmail').value = siteData.email || '';
+            document.getElementById('edAddress').value = siteData.address || '';
+            document.getElementById('edHeroTitle').value = siteData.heroTitle || '';
+            document.getElementById('edHeroSubtitle').value = siteData.heroSubtitle || '';
+
+            // Render Tour edit fields
+            const toursCont = document.getElementById('editorToursContainer');
+            if (toursCont) {
+                toursCont.innerHTML = siteData.tours.map((t, idx) => `
+                <div class="editor-card-box">
+                    <h4 class="editor-card-title"><i class="fa-solid fa-map-pin"></i> ٹور پیکیج نمبر ${idx + 1}</h4>
+                    <div class="editor-grid-2">
+                        <div class="form-group">
+                            <label>پیکیج کا نام / عنوان</label>
+                            <input type="text" id="edTourTitle_${idx}" value="${t.title}">
+                        </div>
+                        <div class="form-group">
+                            <label>پیکیج کی مدت (دن / راتیں)</label>
+                            <input type="text" id="edTourDuration_${idx}" value="${t.duration}">
+                        </div>
+                    </div>
+                    <div class="editor-grid-2">
+                        <div class="form-group">
+                            <label>قیمت (رقم)</label>
+                            <input type="text" id="edTourPrice_${idx}" value="${t.price}">
+                        </div>
+                        <div class="form-group">
+                            <label>قیمت کی اکائی (مثال: / فی فیملی)</label>
+                            <input type="text" id="edTourUnit_${idx}" value="${t.priceUnit || '/ فی فیملی'}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>شامل سہولیات و تفصیلات (ہر لائن میں ایک سہولت لکھیں)</label>
+                        <textarea id="edTourFeatures_${idx}" rows="4">${t.features.join('\n')}</textarea>
+                    </div>
+                </div>
+                `).join('');
+            }
+
+            // Render Hotel edit fields
+            const hotelsCont = document.getElementById('editorHotelsContainer');
+            if (hotelsCont) {
+                hotelsCont.innerHTML = siteData.hotels.map((h, idx) => `
+                <div class="editor-card-box">
+                    <h4 class="editor-card-title"><i class="fa-solid fa-hotel"></i> ہوٹل نمبر ${idx + 1}</h4>
+                    <div class="editor-grid-2">
+                        <div class="form-group">
+                            <label>ہوٹل کا نام</label>
+                            <input type="text" id="edHotelTitle_${idx}" value="${h.title}">
+                        </div>
+                        <div class="form-group">
+                            <label>ریٹنگ (مثال: 4.9 ریٹنگ)</label>
+                            <input type="text" id="edHotelRating_${idx}" value="${h.rating}">
+                        </div>
+                    </div>
+                    <div class="editor-grid-2">
+                        <div class="form-group">
+                            <label>کرایہ (رقم)</label>
+                            <input type="text" id="edHotelPrice_${idx}" value="${h.price}">
+                        </div>
+                        <div class="form-group">
+                            <label>کرائے کی اکائی (مثال: / فی رات)</label>
+                            <input type="text" id="edHotelUnit_${idx}" value="${h.priceUnit || '/ فی رات'}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>ہوٹل کی اہم سہولیات (ہر لائن میں ایک سہولت لکھیں)</label>
+                        <textarea id="edHotelFeatures_${idx}" rows="3">${h.features.join('\n')}</textarea>
+                    </div>
+                </div>
+                `).join('');
+            }
+        }
+
+        // Save Editor Form Data
+        function saveEditorData() {
+            siteData.travelName = document.getElementById('edTravelName').value.trim() || defaultSiteData.travelName;
+            siteData.contactPerson = document.getElementById('edContactPerson').value.trim() || defaultSiteData.contactPerson;
+            siteData.phone = document.getElementById('edPhone').value.trim() || defaultSiteData.phone;
+            siteData.email = document.getElementById('edEmail').value.trim() || defaultSiteData.email;
+            siteData.address = document.getElementById('edAddress').value.trim() || defaultSiteData.address;
+            siteData.heroTitle = document.getElementById('edHeroTitle').value.trim() || defaultSiteData.heroTitle;
+            siteData.heroSubtitle = document.getElementById('edHeroSubtitle').value.trim() || defaultSiteData.heroSubtitle;
+
+            // Collect tours data
+            siteData.tours.forEach((t, idx) => {
+                const titleEl = document.getElementById(`edTourTitle_${idx}`);
+                const durationEl = document.getElementById(`edTourDuration_${idx}`);
+                const priceEl = document.getElementById(`edTourPrice_${idx}`);
+                const unitEl = document.getElementById(`edTourUnit_${idx}`);
+                const featuresEl = document.getElementById(`edTourFeatures_${idx}`);
+
+                if (titleEl) t.title = titleEl.value.trim();
+                if (durationEl) t.duration = durationEl.value.trim();
+                if (priceEl) t.price = priceEl.value.trim();
+                if (unitEl) t.priceUnit = unitEl.value.trim();
+                if (featuresEl) {
+                    t.features = featuresEl.value.split('\n').map(s => s.trim()).filter(s => s.length > 0);
+                }
+            });
+
+            // Collect hotels data
+            siteData.hotels.forEach((h, idx) => {
+                const titleEl = document.getElementById(`edHotelTitle_${idx}`);
+                const ratingEl = document.getElementById(`edHotelRating_${idx}`);
+                const priceEl = document.getElementById(`edHotelPrice_${idx}`);
+                const unitEl = document.getElementById(`edHotelUnit_${idx}`);
+                const featuresEl = document.getElementById(`edHotelFeatures_${idx}`);
+
+                if (titleEl) h.title = titleEl.value.trim();
+                if (ratingEl) h.rating = ratingEl.value.trim();
+                if (priceEl) h.price = priceEl.value.trim();
+                if (unitEl) h.priceUnit = unitEl.value.trim();
+                if (featuresEl) {
+                    h.features = featuresEl.value.split('\n').map(s => s.trim()).filter(s => s.length > 0);
+                }
+            });
+
+            // Save to localStorage
+            localStorage.setItem('naran_site_data', JSON.stringify(siteData));
+
+            // Re-render
+            renderSite();
+            closeEditorDrawer();
+            showToast("تمام ترامیم کامیابی سے محفوظ ہو گئیں!");
+        }
+
+        // Reset to original default data
+        function resetToDefaults() {
+            if (confirm("کیا آپ واقعی تمام ترامیم ختم کر کے اصل ڈیفالٹ ڈیٹا بحال کرنا چاہتے ہیں؟")) {
+                localStorage.removeItem('naran_site_data');
+                siteData = JSON.parse(JSON.stringify(defaultSiteData));
+                renderSite();
+                populateEditorFields();
+                closeEditorDrawer();
+                showToast("اصل ڈیفالٹ ڈیٹا کامیابی سے بحال کر دیا گیا!");
+            }
+        }
+
+        // Download completely updated index.html with values baked in
+        function downloadUpdatedHtml() {
+            // First save any current inputs in editor
+            if (editorModal.classList.contains('active')) {
+                saveEditorData();
+            }
+
+            const docClone = document.documentElement.cloneNode(true);
+
+            // Clean up clone
+            const editorClone = docClone.querySelector('#editorModal');
+            if (editorClone) editorClone.classList.remove('active');
+            const bookingClone = docClone.querySelector('#bookingModal');
+            if (bookingClone) bookingClone.classList.remove('active');
+            const toastClone = docClone.querySelector('#toast');
+            if (toastClone) toastClone.classList.remove('show');
+            const bannerClone = docClone.querySelector('#liveEditBanner');
+            if (bannerClone) bannerClone.classList.remove('active');
+
+            // Bake siteData as default into script tag
+            const scriptTag = docClone.querySelector('#siteDataScript');
+            if (scriptTag) {
+                let code = scriptTag.innerHTML;
+                const jsonStr = JSON.stringify(siteData, null, 4);
+                code = code.replace(/const defaultSiteData = \{[\s\S]*?\n\s*\};/, `const defaultSiteData = ${jsonStr};`);
+                scriptTag.innerHTML = code;
+            }
+
+            const fullHtml = '<!DOCTYPE html>\n' + docClone.outerHTML;
+            const blob = new Blob([fullHtml], { type: 'text/html;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'index.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            showToast("اپڈیٹ شدہ index.html ڈاؤن لوڈ ہو گیا ہے!");
+        }
+
+        // Show Toast Notification
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            const toastText = document.getElementById('toastText');
+            if (toast && toastText) {
+                toastText.innerText = msg;
+                toast.classList.add('show');
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 3500);
+            }
+        }
+
+        // ==========================================
+        // DIRECT INLINE CLICK-TO-EDIT MODE
+        // ==========================================
+        let isLiveEdit = false;
+
+        function toggleLiveEditMode(enable) {
+            isLiveEdit = (enable !== undefined) ? enable : !isLiveEdit;
+            const banner = document.getElementById('liveEditBanner');
+            const editableElements = document.querySelectorAll('[data-editable]');
+
+            if (isLiveEdit) {
+                document.body.classList.add('live-edit-active');
+                if (banner) banner.classList.add('active');
+                editableElements.forEach(el => {
+                    el.contentEditable = "true";
+                });
+                showToast("لائیو ایڈیٹ موڈ آن! کسی بھی متن پر کلک کر کے تبدیل کریں");
+            } else {
+                document.body.classList.remove('live-edit-active');
+                if (banner) banner.classList.remove('active');
+                editableElements.forEach(el => {
+                    el.contentEditable = "false";
+                });
+            }
+        }
+
+        function saveLiveEdits() {
+            const travelNameEl = document.querySelector('[data-editable="travelName"]');
+            const heroTitleEl = document.querySelector('[data-editable="heroTitle"]');
+            const heroSubtitleEl = document.querySelector('[data-editable="heroSubtitle"]');
+
+            if (travelNameEl) siteData.travelName = travelNameEl.innerText.trim();
+            if (heroTitleEl) siteData.heroTitle = heroTitleEl.innerText.trim();
+            if (heroSubtitleEl) siteData.heroSubtitle = heroSubtitleEl.innerText.trim();
+
+            localStorage.setItem('naran_site_data', JSON.stringify(siteData));
+            toggleLiveEditMode(false);
+            renderSite();
+            showToast("لائیو ترامیم کامیابی سے محفوظ ہو گئیں!");
+        }
+
+        // ==========================================
+        // SEARCH, BOOKING & UTILITY HANDLERS
+        // ==========================================
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('searchDate').min = today;
+        document.getElementById('custDate').min = today;
+        document.getElementById('searchDate').value = today;
+
+        // Mobile Hamburger Menu Toggle
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburgerBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = hamburgerBtn.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburgerBtn.querySelector('i').classList.remove('fa-xmark');
+                hamburgerBtn.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        // Booking Modal Handlers
+        const bookingModal = document.getElementById('bookingModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const custPackage = document.getElementById('custPackage');
+
+        function openBookingModal(packageOrService) {
+            custPackage.value = packageOrService || 'جنرل ٹور / ہوٹل بکنگ';
+            modalTitle.innerText = 'بکنگ برائے: ' + (packageOrService || 'ناران ٹور');
+            bookingModal.classList.add('active');
+        }
+
+        function closeBookingModal() {
+            bookingModal.classList.remove('active');
+        }
+
+        bookingModal.addEventListener('click', (e) => {
+            if (e.target === bookingModal) closeBookingModal();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (editorModal.classList.contains('active')) closeEditorDrawer();
+                if (bookingModal.classList.contains('active')) closeBookingModal();
+            }
+        });
+
+        // Handle Search Bar Submit to WhatsApp
+        function handleSearchBooking() {
+            const pInfo = formatPhone(siteData.phone || '03014210508');
+            const service = document.getElementById('searchService').value;
+            const date = document.getElementById('searchDate').value || 'جلد از جلد';
+            const guests = document.getElementById('searchGuests').value || '2';
+
+            const message = `اسلام علیکم ${siteData.contactPerson} بھائی! میں ناران ٹور کے لیے معلوم کرنا چاہتا ہوں۔%0A*سروس:* ${encodeURIComponent(service)}%0A*تاریخ:* ${encodeURIComponent(date)}%0A*افراد کی تعداد:* ${encodeURIComponent(guests)} افراد`;
+            window.open(`https://wa.me/${pInfo.raw}?text=${message}`, '_blank');
+        }
+
+        // Handle Modal Form Submit to WhatsApp
+        function submitBookingForm(event) {
+            event.preventDefault();
+            const pInfo = formatPhone(siteData.phone || '03014210508');
+            const name = document.getElementById('custName').value.trim();
+            const phone = document.getElementById('custPhone').value.trim();
+            const selectedPackage = document.getElementById('custPackage').value;
+            const date = document.getElementById('custDate').value;
+            const persons = document.getElementById('custPersons').value;
+
+            const text = `اسلام علیکم ${siteData.contactPerson} بھائی! نئی بکنگ انکوائری:%0A%0A*نام:* ${encodeURIComponent(name)}%0A*فون:* ${encodeURIComponent(phone)}%0A*پیکج / سروس:* ${encodeURIComponent(selectedPackage)}%0A*آمد کی تاریخ:* ${encodeURIComponent(date)}%0A*افراد کی تعداد:* ${encodeURIComponent(persons)}`;
+
+            window.open(`https://wa.me/${pInfo.raw}?text=${text}`, '_blank');
+            closeBookingModal();
+        }
+
+        // Initial Rendering
+        renderSite();
+    </script>
+</body>
+</html>
